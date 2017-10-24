@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Are you logged in?</title>
+    <script type="text/javascript">
+        
+        function showSecret() {
+            var secret = document.getElementById('loggedInOnly');
+            secret.innerHTML = "This is your new message.";
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="alwaysOn">
+        <p>You must be logged in to see the hidden message.</p>
+        <form>
+            <input type="button" onclick="showSecret()" value="Login" />
+        </form>
+    </div>
+
+
+    <p id="loggedInOnly"></p>
+
+
+</body>
+
+
+</html>
